@@ -7,7 +7,7 @@ open the first terminal:
 - ng serve -o
 
 open the second terminal:
-- cd Angular_fullCRUD_JsonServer_basic
+- cd Angular_fullCRUD_JsonServer_Basic1
 - json-server --watch db.json
 
 ### the default db.json (under src) is updated with the todos data.

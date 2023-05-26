@@ -1,7 +1,7 @@
 # Angular, full CRUD, Json-server
 ## if you choose to clone this templete follow these steps:
 open the first terminal:
-- git clone https://github.com/orenzylber/Angular_FullCRUD_JsonServer_basic.git
+- git clone https://github.com/orenzylber/Angular_FullCRUD_JsonServer_Basic1.git
 - cd Angular_FullCRUD_JsonServer_Basic1
 - npm install
 - ng serve -o

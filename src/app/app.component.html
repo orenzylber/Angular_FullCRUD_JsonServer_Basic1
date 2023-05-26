@@ -1,0 +1,26 @@
+Hello
+<!-- {{ar|json}} -->
+<app-samp></app-samp>
+<h1>Products</h1>
+<!-- {{ar|json}} -->
+<div *ngFor="let item of ar; let odd = odd;">
+  
+    <div *ngIf="item.completed;else oddColor" style="background-color: brown;">
+        <button (click)="delItem(item.id ||0)">del</button> 
+        <button (click)="updItem(item.id ||0,todotitle.value,+userId.value,completed.checked)">Update</button>
+        {{item.userId}},{{item.title}},{{item.completed}},{{item.id}}
+    </div>
+
+    <ng-template #oddColor>
+        <div style="background-color: green;">
+            <button (click)="delItem(item.id ||0)">del</button>
+            <button (click)="updItem(item.id ||0,todotitle.value,+userId.value,completed.checked)">Update</button>
+            {{item.userId}},{{item.title}},{{item.completed}},{{item.id}}
+        </div>
+    </ng-template>
+    
+</div>
+title<input #todotitle >
+    userId<input #userId >
+    completed<input type="checkbox" #completed >
+    <button (click)="addTodo(todotitle.value,+userId.value,completed.checked)">new</button>
